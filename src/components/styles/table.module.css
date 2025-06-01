@@ -1,0 +1,224 @@
+/* Container for the whole page */
+.pageContainer {
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ef 100%);
+  min-height: 100vh;
+  padding: 40px 0 0 0;
+}
+
+/* Artistic header box */
+.headerBox {
+  background: #fff;
+  border-radius: 18px 18px 0 0;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+  padding: 32px 32px 16px 32px;
+  margin: 0 auto;
+  max-width: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  z-index: 2;
+}
+
+.pageTitle {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2d3a4a;
+  letter-spacing: 1px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-shadow: 0 2px 8px rgba(80, 80, 80, 0.07);
+}
+
+/* Optional: make the table blend with the header */
+.tableContainer {
+  background: #fff;
+  border-radius: 0 0 18px 18px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+  max-width: 900px;
+  margin: 0 auto 32px auto;
+  padding: 24px 32px 32px 32px;
+  position: relative;
+  top: -8px;
+}
+
+.tableActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tableActions select {
+  margin-left: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.tableActions button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #2d6cdf;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.tableActions button:hover {
+  background-color: #174bad;
+}
+
+.deleteButton {
+  background-color: #e53935 !important;
+}
+
+.deleteButton:hover {
+  background-color: #b71c1c !important;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0.75rem;
+  border-bottom: 1.5px solid #e5e7eb;
+  text-align: left;
+}
+
+th {
+  background-color: #3b82f6;
+  color: white;
+  user-select: none;
+}
+
+th:hover {
+  background-color: #2563eb;
+  cursor: pointer;
+}
+
+tr:hover {
+  background-color: #e0f2fe;
+}
+
+.colCheckbox {
+  cursor: default;
+  width: 40px;
+  min-width: 40px;
+  max-width: 50px;
+  text-align: center;
+  padding: 0 4px;
+}
+
+.colName {
+  min-width: 100px;
+  width: 160px;
+  max-width: 340px;
+}
+
+.colPrice {
+  width: 120px;
+  min-width: 80px;
+  max-width: 1400px;
+  text-align: right;
+}
+
+.colStock {
+  width: 60px;
+  min-width: 50px;
+  max-width: 70px;
+  text-align: right;
+}
+
+.colCategory {
+  min-width: 200px;
+  width: 220px;
+  max-width: 300px;
+}
+
+
+.row {
+  position: relative;
+}
+
+.rowActions {
+  display: none;
+  position: absolute;
+  top: 20%;
+  right: 2%;
+  margin-top: 4px auto;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.row:hover .rowActions {
+  display: flex;
+}
+
+.rowActionBtn {
+  background: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 2px 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+.rowActionBtn:hover {
+  background: #e0e0e0;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.25rem;
+  margin-top: 1rem;
+}
+
+.pagination button {
+  background-color: gray;
+  border: 1px solid #ccc;
+  padding: 0.5rem 0.75rem;
+  margin: 0 0.25rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: #eaeaea;
+}
+
+.pagination button:disabled {
+  background-color: #f0f0f0;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+.activePage {
+  background-color: #4285f4 !important;
+  color: white !important;
+  font-weight: bold;
+  border: 1px solid #1e3a8a;
+}
+
+.formBox {
+  background: linear-gradient(135deg, #f8fafc 60%, #e0e7ef 100%);
+  border-radius: 0 0 18px 18px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+  max-width: 900px;
+  margin: 0 auto 32px auto;
+  padding: 32px 32px 40px 32px;
+  position: relative;
+  top: -8px;
+  /* transition for smooth blending */
+  transition: background 0.3s;
+}

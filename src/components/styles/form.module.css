@@ -1,0 +1,86 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f3f4f6;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .labelGroup {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .labelGroup label {
+    margin-bottom: 0.25rem;
+    font-weight: bold;
+    color: #374151;
+  }
+  
+  .labelGroup input {
+    padding: 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  button {
+    padding: 0.75rem;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: #2563eb;
+  }
+  
+  .successMessage {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+
+  .errorMessage {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #dd5d3d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+
+  .inputWithPrefix {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .inputWithPrefix input {
+    padding-left: 35px;
+  }
+  
+  .prefix {
+    position: absolute;
+    left: 10px;
+    color: #555;
+    pointer-events: none;
+    font-size: 1rem;
+  }
+  
